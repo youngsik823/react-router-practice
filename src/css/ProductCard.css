@@ -1,0 +1,23 @@
+.product-card {
+    transition: transform 0.3s ease;
+}
+.product-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.product-card-img {
+    width: 310px;
+}
+.product-card-choice {
+    font-size: 10px;
+}
+.product-card-title {
+    font-size: 15px;
+}
+.product-card-price {
+    font-size: 15px;
+}
+.product-card-new {
+    font-size: 12px;
+    margin-bottom: 15px;
+}

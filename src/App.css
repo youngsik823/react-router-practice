@@ -1,7 +1,16 @@
 .login-button {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin: 20px;
+    cursor: pointer;
+}
+.logout-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
 }
 
 .nav-section {
@@ -13,9 +22,16 @@
     width: 100px;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
 .menu-list {
     display: flex;
     list-style-type: none;
+    
+}
+.menu-list:hover {
+    cursor: pointer;
 }
 
 .menu-list li {
@@ -36,10 +52,74 @@
 .search-bar input {
     border: none;
     margin-left: 5px;
+    width: 200px;
 }
 
 .search-bar {
     border-bottom: 2px solid black;
     margin-right: 30px;
     padding: 5px;
+}
+
+.product-img {
+    display: flex;
+    justify-content: flex-end;
+}
+.product-img img {
+    width: 400px;
+}
+
+.product-detail-down-button {
+    margin-top: 18px;
+}
+.product-detail-size-dropdown {
+    text-align: center;
+}
+.product-detail-button {
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #111;
+    text-align: center;
+    color: white;
+    border-radius: 0.3em
+}
+.product-detail-button:hover {
+    cursor: pointer;
+  
+}
+.product-detail-title {
+    font-size: 20px;
+}
+.product-detail-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.product-detail-choice {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.product-detail-down-button .dropdown-toggle {
+    background-color: white; 
+    border-color: #ccc; 
+    color: black; 
+}
+
+.product-detail-down-button .dropdown-toggle:hover {
+    background-color: #312d2d; 
+    border-color: #bbb; 
+}
+.product-detail-size-dropdown:hover {
+    background-color: #312d2d; 
+    color: white; 
+}
+
+.product-detail-down-button .dropdown-toggle:focus,
+.product-detail-down-button .dropdown-toggle:active {
+    background-color: #312d2d; 
+    border-color: #aaa; 
+    color: white; 
 }
