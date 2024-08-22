@@ -1,0 +1,69 @@
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background: gray;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    z-index: 1;
+    transition: left 0.35s;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.side-menu-cancel {
+    font-size: 30px;
+    color: #000;
+    margin: 10px 0 0 165px;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.sidebar-menu:hover {
+    cursor: pointer;
+    border-bottom: 2px solid red;
+}
+
+.side-menu {
+    margin-left: 20px;
+    display: none;
+}
+
+.side-menu:hover {
+    cursor: pointer;
+}
+
+.side-menu-icon {
+    font-size: 1.5rem;
+}
+.product-all {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
+
+    .side-menu {
+        display: block;
+    }
+    .product-all-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .product-all-row .col-lg-3 {
+        flex: 0 0 auto;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}

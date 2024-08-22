@@ -28,7 +28,6 @@
 .menu-list {
     display: flex;
     list-style-type: none;
-    
 }
 .menu-list:hover {
     cursor: pointer;
@@ -83,11 +82,10 @@
     background-color: #111;
     text-align: center;
     color: white;
-    border-radius: 0.3em
+    border-radius: 0.3em;
 }
 .product-detail-button:hover {
     cursor: pointer;
-  
 }
 .product-detail-title {
     font-size: 20px;
@@ -103,23 +101,42 @@
 }
 
 .product-detail-down-button .dropdown-toggle {
-    background-color: white; 
-    border-color: #ccc; 
-    color: black; 
+    background-color: white;
+    border-color: #ccc;
+    color: black;
 }
 
 .product-detail-down-button .dropdown-toggle:hover {
-    background-color: #312d2d; 
-    border-color: #bbb; 
+    background-color: #312d2d;
+    border-color: #bbb;
 }
 .product-detail-size-dropdown:hover {
-    background-color: #312d2d; 
-    color: white; 
+    background-color: #312d2d;
+    color: white;
 }
 
 .product-detail-down-button .dropdown-toggle:focus,
 .product-detail-down-button .dropdown-toggle:active {
-    background-color: #312d2d; 
-    border-color: #aaa; 
-    color: white; 
+    background-color: #312d2d;
+    border-color: #aaa;
+    color: white;
 }
+
+.side-menu {
+    margin-left: 20px;
+}
+.side-menu:hover {
+    cursor: pointer;
+}
+.side-menu-icon {
+    font-size: 1.5rem;
+}
+.side-menu-icon:checked {
+    left: 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
