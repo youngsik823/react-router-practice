@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Sidebar from "./Sidebar";
 const Navbar = ({ authenticate, setAuthenticate }) => {
     const menuList = [
@@ -32,6 +32,9 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
     const goToLogout = () => {
         setAuthenticate(false);
     };
+
+    const location = useLocation();
+    const isLoginPage = location.pathname === '/';
 
     return (
         <div>
@@ -69,14 +72,14 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
                     ))}
                 </ul>
                 <div className="search">
-                    <div className="search-bar">
+                    { isLoginPage === true ? (<div className="search-bar">
                         <FontAwesomeIcon icon={faSearch} />
                         <input
                             type="text"
                             placeholder="검색할 상품을 입력하세요."
                             onKeyDown={(e) => search(e)}
                         />
-                    </div>
+                    </div>) : ("")}
                 </div>
             </div>
         </div>
