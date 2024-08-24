@@ -6,7 +6,7 @@ const ProductDetail = () => {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
     const getProductDetail = async () => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://my-json-server.typicode.com/youngsik823/react-router-practice/products/${id}`;
         const response = await fetch(url);
         const data = await response.json();
         setProduct(data);
@@ -22,8 +22,12 @@ const ProductDetail = () => {
                 </Col>
                 <Col>
                     <div className="product-detail-title">{product?.title}</div>
-                    <div className="product-detail-price">\{product?.price}</div>
-                    <div className="product-detail-choice">{product?.choice == true ? "Conscious choice" : ""}</div>
+                    <div className="product-detail-price">
+                        \{product?.price}
+                    </div>
+                    <div className="product-detail-choice">
+                        {product?.choice == true ? "Conscious choice" : ""}
+                    </div>
                     <div>
                         <DropdownButton
                             id="dropdown-basic-button"
@@ -32,7 +36,7 @@ const ProductDetail = () => {
                         >
                             {product?.size.map((size) => (
                                 <Dropdown.Item
-                                href={`#${size}`}
+                                    href={`#${size}`}
                                     className="product-detail-size-dropdown"
                                 >
                                     {size}

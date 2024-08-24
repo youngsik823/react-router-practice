@@ -8,7 +8,7 @@ const ProductAll = () => {
     const [query, setQuery] = useSearchParams();
     const getProducts = async () => {
         const searchQuery = query.get("q") || "";
-        const url = `http://localhost:5000/products?q=${searchQuery}`;
+        const url = `https://my-json-server.typicode.com/youngsik823/react-router-practice/products?q=${searchQuery}`;
         try {
             const response = await fetch(url);
             const products = await response.json();
