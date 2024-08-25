@@ -1,5 +1,7 @@
 .product-card {
     transition: transform 0.3s ease;
+    /* justify-content: center; */
+    width: 200px;
 }
 .product-card:hover {
     transform: scale(1.05);
@@ -20,4 +22,26 @@
 .product-card-new {
     font-size: 12px;
     margin-bottom: 15px;
+}
+@media (max-width: 900px) {
+    .product-card-img {
+        width: 200px 
+    }
+}
+@media (min-width: 912px) and (max-width: 912px) {
+    .product-card-img {
+        width: 700px
+    }
+    .product-card-title{
+        font-size: 25px;
+    }
+    .product-card-choice{
+        font-size: 20px;
+    }
+    .product-card-price {
+        font-size: 24px;
+    }
+    .product-card-new {
+        font-size: 18px;
+    }
 }

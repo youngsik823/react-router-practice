@@ -47,6 +47,25 @@
 .product-all {
     width: 100%;
 }
+@media (min-width: 800px) and (max-width: 1180px) {
+    .menu-list {
+        display: none;
+    }
+
+    .side-menu {
+        display: block;
+    }
+    .product-all-row {
+        justify-content: center;
+    }
+    .product-all-row .col-lg-3 {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
 @media (max-width: 768px) {
     .menu-list {
         display: none;
@@ -56,14 +75,12 @@
         display: block;
     }
     .product-all-row {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
     .product-all-row .col-lg-3 {
-        flex: 0 0 auto;
         margin: 10px;
         display: flex;
         justify-content: center;
     }
+    
 }
