@@ -25,21 +25,24 @@
 }
 @media (max-width: 1280px) {
     .product-card-img {
-        width: 250px 
+        width: 250px;
     }
-    .product-card{
+    .product-card {
         width: 250px;
         justify-content: center;
     }
 }
 @media (min-width: 912px) and (max-width: 912px) {
-    .product-card-img {
-        width: 700px
+    .product-card {
+        width: 500px;
     }
-    .product-card-title{
+    .product-card-img {
+        width: 500px;
+    }
+    .product-card-title {
         font-size: 25px;
     }
-    .product-card-choice{
+    .product-card-choice {
         font-size: 20px;
     }
     .product-card-price {
